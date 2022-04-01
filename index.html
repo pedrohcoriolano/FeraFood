@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 90vh;
+            background-color: teal;
+            color: white;
+        }
+        span {
+            margin: 1rem;
+        }
+
+        button {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <span>Login:</span>
+    <input type="text">
+    <span>Senha:</span>
+    <input type="password">
+    <a href="menu.html"><button id="botao__login">Entrar</button></a>
+
+    <script>
+        var botao = document.querySelector('#botao__login')
+
+        botao.onclick = function () {
+            alert('Logado!')
+        }
+    </script>
+</body>
+</html>

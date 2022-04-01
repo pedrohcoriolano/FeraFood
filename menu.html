@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>FeraFood, o melhor lanche da cidade!</h1>
+        <p>Qualidade tem nome!</p>
+    </header>
+    <main>
+        <div id="menu">
+            <h3>Menu:</h3>
+            <h4>-- Salgados --</h4>
+            <p>Coxinha de carne --> R$ 3,50</p>
+            <p>Coxinha de frango --> R$ 3,50</p>
+            <p>Coxinha de camarão --> R$ 4,50</p>
+            <select id="salgados">
+                <option value="nulo">Selecione o sabor</option>
+                <option id="carne" value="coxinha de carne">carne</option>
+                <option id="frango" value="coxinha de frango">frango</option>
+                <option id="camarao" value="coxinha de camarao">camarão</option>
+            </select>
+            <input type="number" id="quantidade__salgados" min="0" placeholder="Quantidade">
+            <button id="botao__salgados">Confirmar</button>
+
+            <h4>-- Lanches --</h4>
+            <p>X-calabresa  --> R$ 10</p>
+            <p>Misto quente --> R$ 7</p>
+            <p>Hot Dog --> R$ 8</p>
+            <select id="lanches">
+                <option value="nulo">Selecione o Lanche</option>
+                <option value="x-calabresa">X-calabresa</option>
+                <option value="misto quente">Misto quente</option>
+                <option value="hot dog">Hot Dog</option>
+            </select>
+            <input type="number" id="quantidade__lanches" min="0" placeholder="Quantidade">
+            <button id="botao__lanches">Confirmar</button>
+
+            <h4>-- Bebidas --</h4>
+            <p>Água  --> R$ 2,50</p>
+            <p>Coca Cola --> R$ 6</p>
+            <p>Fanta Laranja --> R$ 6</p>
+            <select id="bebidas">
+                <option value="nulo">Selecione a Bebida</option>
+                <option value="agua">Água</option>
+                <option value="coca cola">Coca Cola</option>
+                <option value="fanta laranja">Fanta Laranja</option>
+            </select>
+            <input type="number" id="quantidade__bebidas" min="0" placeholder="Quantidade">
+            <button id="botao__bebidas">Confirmar</button>
+
+            <h4>-- Doces --</h4>
+            <p>Torta de limão --> R$ 10</p>
+            <p>Torta de morango --> R$ 11</p>
+            <p>Torta de Ninho --> R$ 12</p>
+            <select id="doces">
+                <option value=" nulo">Selecione o Sabor</option>
+                <option value="torta de limao">limão</option>
+                <option value="torta de morango">morango</option>
+                <option value="torta de ninho">Ninho</option>
+            </select>
+            <input type="number" id="quantidade__doces" min="0" placeholder="Quantidade">
+            <button id="botao__doces">Confirmar</button>
+
+            <button id="botao__carrinho">Ir para o Carrinho 🛒</button>
+        </div>
+        <div id="carrinho">
+            <h3>Total:</h3>
+            <p><label id="itens"></label></p>
+            <p><label id="valor__total"></label></p>
+        
+            <input type="text" id="entrada__cupom" placeholder="Cupom: 'descontin'">
+            <button id="botao__aplicar">Aplicar</button>
+            <p><label id="preco__desconto"></label></p>
+        </div>
+    </main>
+</body>
+</html>
